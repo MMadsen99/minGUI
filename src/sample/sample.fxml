@@ -4,24 +4,31 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
-<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="287.0">
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="287.0">
          <children>
-            <Button layoutX="45.0" layoutY="101.0" mnemonicParsing="false" text="Send kommando" />
+            <Button layoutX="45.0" layoutY="101.0" mnemonicParsing="false" onAction="#knapKlikket" text="Send kommando" />
             <Label graphicTextGap="12.0" layoutX="45.0" layoutY="45.0" prefHeight="17.0" prefWidth="91.0" text="Min GUI!">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
             <TextField layoutX="45.0" layoutY="74.0" prefHeight="27.0" prefWidth="191.0" promptText="indtast noget" />
-            <TextArea layoutX="47.0" layoutY="128.0" prefHeight="285.0" prefWidth="191.0" promptText="Her kommer svaret fra programmet" />
+            <TextArea fx:id="tekst1" layoutX="47.0" layoutY="128.0" prefHeight="285.0" prefWidth="191.0" promptText="Her kommer svaret fra programmet" />
          </children>
       </Pane>
    </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
 </GridPane>
